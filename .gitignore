@@ -1,0 +1,11 @@
+**/.sass-cache
+*.bak
+*.log
+*.sql
+*.swp
+*~
+.DS_Store
+.cvs
+.ftpquota
+.htaccess
+.idea
