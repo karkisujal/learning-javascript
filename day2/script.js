@@ -13,7 +13,7 @@ var location1 = randomLoc,
     guesses = 0,
     isSunk = false;
 
-console.log(location1);
+/*console.log(location1);
 console.log(location2);
 console.log(location3);
 
@@ -38,7 +38,7 @@ while(isSunk == false ){
 }
 
 var stats = "You took " + guesses + " guesses to sin the battleship, " + "which means your shooting accuracy was " + (3/guesses);
-alert(stats);
+alert(stats);*/
 
 
 //test1
@@ -226,4 +226,11 @@ while(j < hasBubbleGum.length){
         console.log(product[j] + " contains bubble gum");
     }
     j= j +1;
+}
+
+
+for( var k = 0; k<hasBubbleGum.length; k++){
+    if(hasBubbleGum[k]){
+        console.log(product[k] + " contains bubble gum");
+    }
 }
