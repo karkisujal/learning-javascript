@@ -6,7 +6,7 @@ var location1 = 3,
     guesses = 0,
     isSunk = false;
 
-while(isSunk == false ){
+/*while(isSunk == false ){
     guess = prompt("Ready, aim, fire! (enter a number from 0-6):");
     if(guess < 0 || guess > 6){
         alert("Please enter a valid cell number");
@@ -27,7 +27,7 @@ while(isSunk == false ){
 }
 
 var stats = "You took " + guesses + " guesses to sin the battleship, " + "which means your shooting accuracy was " + (3/guesses);
-alert(stats);
+alert(stats);*/
 
 
 //test1
@@ -58,3 +58,9 @@ if(keyPresses == "Y" || (points > 100 && points < 200)){
     level = 1;
 }
 document.write("What's the value of <strong>level? </strong><u>" + level + "</u><br>");
+
+var randomLoc = Math.random();
+document.write(randomLoc);
+
+var num = Math.floor(Math.random() * 11);
+document.write(num);
