@@ -1,12 +1,23 @@
-var location1 = 3,
-    location2 = 4,
-    location3 = 5,
+/*var randomLoc = Math.random();
+document.write(randomLoc);
+
+var num = Math.floor(Math.random() * 11);
+document.write(num);*/
+
+var randomLoc = Math.floor(Math.random() * 5);
+var location1 = randomLoc,
+    location2 = location1 + 1,
+    location3 = location2 + 1,
     guess,
     hits = 0,
     guesses = 0,
     isSunk = false;
 
-/*while(isSunk == false ){
+console.log(location1);
+console.log(location2);
+console.log(location3);
+
+while(isSunk == false ){
     guess = prompt("Ready, aim, fire! (enter a number from 0-6):");
     if(guess < 0 || guess > 6){
         alert("Please enter a valid cell number");
@@ -27,7 +38,7 @@ var location1 = 3,
 }
 
 var stats = "You took " + guesses + " guesses to sin the battleship, " + "which means your shooting accuracy was " + (3/guesses);
-alert(stats);*/
+alert(stats);
 
 
 //test1
@@ -59,8 +70,3 @@ if(keyPresses == "Y" || (points > 100 && points < 200)){
 }
 document.write("What's the value of <strong>level? </strong><u>" + level + "</u><br>");
 
-var randomLoc = Math.random();
-document.write(randomLoc);
-
-var num = Math.floor(Math.random() * 11);
-document.write(num);
