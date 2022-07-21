@@ -216,7 +216,8 @@ var output,
     console.log(output);
     i = i + 1;
 }*/
-var highScore = 0;
+
+/*var highScore = 0;
 for( var l = 0; l < scores.length; l++){
     output = "Bubble solution 3" + l + " scores:" + scores[l];
     console.log(output);
@@ -225,9 +226,44 @@ for( var l = 0; l < scores.length; l++){
     }
 }
 console.log("Bubbles tests: " + scores.length);
+console.log("Highest bubble score: " + highScore);*/
+
+
+/*var bestSolutions = [];
+for (var l = 0; l < scores.length; l++) {
+    if (scores[l] == highScore) {
+        bestSolutions.push(l);
+    } }
+console.log("Solutions with the highest score: " + bestSolutions);*/
+
+
+function printAndGetHighScore(scores){
+    var highScore = 0,
+        output;
+    for( var l = 0; l < scores.length; l++){
+        output = "Bubble solution 3" + l + " scores:" + scores[l];
+        console.log(output);
+        if(scores[l] > highScore){
+            highScore = scores[l];
+        }
+    }
+    return highScore;
+}
+var highScore = printAndGetHighScore(scores);
+console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + highScore);
 
-
+function getBestResults(scores, highScore){
+    var bestSolutions = [];
+    for (var i = 0; i<scores.length; i++){
+        if (scores[i] == highScore) {
+            bestSolutions.push(i);
+        }
+    }
+    return bestSolutions;
+}
+var bestSolutions = getBestResults(scores, highScore);
+console.log("Solutions with the highest score: " + bestSolutions);
 
 var product = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
 var hasBubbleGum = [false, false, false, true];
