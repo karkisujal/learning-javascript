@@ -206,3 +206,24 @@ function makePhrases(){
     alert(phrase);
 }
 makePhrases();
+
+
+var scores = [60, 50, 60, 58, 54, 58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
+var output,
+    i = 0;
+while(i < (scores.length - 1) ){
+    output = "Bubble solution 3" + i + " scores:" + scores[i];
+    console.log(output);
+    i = i + 1;
+}
+
+var product = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+var hasBubbleGum = [false, false, false, true];
+var j = 0;
+
+while(j < hasBubbleGum.length){
+    if(hasBubbleGum[j]){
+        console.log(product[j] + " contains bubble gum");
+    }
+    j= j +1;
+}
