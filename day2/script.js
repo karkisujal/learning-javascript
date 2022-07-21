@@ -273,7 +273,7 @@ function getMostCostEffectiveSolution(scores, costs, highScore){
         if(scores[i] == highScore){
             if(cost > costs[i]){
                 index = i;
-                cost = costs;
+                cost = costs[i];
             }
         }
     }
