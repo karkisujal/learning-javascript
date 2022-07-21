@@ -70,3 +70,16 @@ if(keyPresses == "Y" || (points > 100 && points < 200)){
 }
 document.write("What's the value of <strong>level? </strong><u>" + level + "</u><br>");
 
+
+
+//Javascript Functions
+
+function bark(dogName, dogWeight, comparision){
+    if(dogWeight > comparision){
+        console.log(dogName + " says WOOF WOOF");
+    } else {
+        console.log(dogName + " says woof woof");
+    }
+}
+
+bark("spike", '13', '20');
