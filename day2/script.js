@@ -211,11 +211,23 @@ makePhrases();
 var scores = [60, 50, 60, 58, 54, 58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
 var output,
     i = 0;
-while(i < (scores.length - 1) ){
+/*while(i < (scores.length - 1) ){
     output = "Bubble solution 3" + i + " scores:" + scores[i];
     console.log(output);
     i = i + 1;
+}*/
+var highScore = 0;
+for( var l = 0; l < scores.length; l++){
+    output = "Bubble solution 3" + l + " scores:" + scores[l];
+    console.log(output);
+    if(scores[l] > highScore){
+        highScore = scores[l];
+    }
 }
+console.log("Bubbles tests: " + scores.length);
+console.log("Highest bubble score: " + highScore);
+
+
 
 var product = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
 var hasBubbleGum = [false, false, false, true];
@@ -234,3 +246,11 @@ for( var k = 0; k<hasBubbleGum.length; k++){
         console.log(product[k] + " contains bubble gum");
     }
 }
+
+
+var genres = [];
+genres.push("Rockabilly");
+genres.push("Ambient");
+
+var size = genres.length;
+console.log(size);
