@@ -28,3 +28,33 @@ while(isSunk == false ){
 
 var stats = "You took " + guesses + " guesses to sin the battleship, " + "which means your shooting accuracy was " + (3/guesses);
 alert(stats);
+
+
+//test1
+var temp = 81,
+    willRain = true,
+    humid = (temp > 80 && willRain == true);
+document.write("What's the value of <strong>humid? </strong><u>" + humid + "</u><br>");
+
+//test2
+var guess1 = 6,
+    isValid = (guess1 >= 0 && guess1 <=6);
+document.write("What's the value of <strong>isValid? </strong><u>" + isValid + "</u><br>");
+
+//test3
+var kB = 1287,
+    tooBig = (kB > 1000),
+    urgent = true,
+    sendFile = (urgent == true || tooBig == false);
+document.write("What's the value of <strong>sendFile? </strong><u>" + sendFile + "</u><br>");
+
+//test4
+var keyPresses = "N",
+    points = 142,
+    level;
+if(keyPresses == "Y" || (points > 100 && points < 200)){
+    level = 2;
+} else {
+    level = 1;
+}
+document.write("What's the value of <strong>level? </strong><u>" + level + "</u><br>");
